@@ -15,9 +15,21 @@ const initialState = {
     ]
   };
 
-export const rootReducer = (state,action) => { 
+export const rootReducer = (initialState, action) => { 
+    switch(action.type) { 
+        case "ADD_FEATURE": 
+        return { 
+            //state with added features 
+        }
 
-    return state
+        case "REMOVE_FEATURE": 
+        return { 
+            //state with removed feature
+        }
+    }
+
+
+    return initialState
 }
 
 
